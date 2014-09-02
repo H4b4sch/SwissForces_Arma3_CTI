@@ -26,7 +26,7 @@ _costs = [
 	[2500], //--- Light
 	[5000], //--- Heavy
 	[25000], //--- Air
-	[75000], //--- Satellite
+	[75000,25000], //--- Satellite
 	[10000], //--- Air FFAR
 	[15000], //--- Air AT
 	[20000], //--- Air AA
@@ -40,7 +40,7 @@ _levels = [
 	1, //--- Light
 	1, //--- Heavy
 	1, //--- Air
-	1, //--- Satellite
+	2, //--- Satellite
 	1, //--- Air FFAR
 	1, //--- Air AT
 	1, //--- Air AA
@@ -68,7 +68,7 @@ _times = [
 	[30], //--- Light
 	[50], //--- Heavy
 	[90], //--- Air
-	[120], //--- Satellite
+	[120,60], //--- Satellite
 	[90], //--- Air FFAR
 	[90], //--- Air AT
 	[90], //--- Air AA
@@ -83,7 +83,7 @@ if (CTI_IsClient) then {
 		["Light Factory", "Unlock better motorized units"], //--- Light
 		["Heavy Factory", "Unlock better armored units"], //--- Heavy
 		["Aircraft Factory", "Unlock better aircraft units"], //--- Air
-		["Satellite", "Allows the use of the satellite camera"], //--- Satellite
+		["Satellite", "Allows the use of the satellite camera<br />The second upgrade enables night- and thermal vision."], //--- Satellite
 		["Aircraft FFAR", "Unlocks the FFAR Rockets for Aircrafts"], //--- Air FFAR
 		["Aircraft AT", "Unlocks the Anti Tank Missiles for Aircrafts"], //--- Air AT
 		["Aircraft AA", "Unlocks the Anti Air Missiles for Aircrafts"], //--- Air AA
