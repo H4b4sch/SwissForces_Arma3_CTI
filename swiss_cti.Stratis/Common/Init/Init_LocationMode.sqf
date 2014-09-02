@@ -16,11 +16,12 @@ waitUntil {!isNil 'CTI_Init_Common'};
 
 TownTemplate = [];
 switch (missionNamespace getVariable "CTI_TOWNS_AMOUNT") do {
-	case 0: {TownTemplate = CTI_Logic getVariable "Towns_RemovedXSmall"};
-	case 1: {TownTemplate = CTI_Logic getVariable "Towns_RemovedSmall"};
-	case 2: {TownTemplate = CTI_Logic getVariable "Towns_RemovedMedium"};
-	case 3: {TownTemplate = CTI_Logic getVariable "Towns_RemovedLarge"};
-	//--- case 4 = full. useless.
+	case 0: {TownTemplate = CTI_Logic getVariable "Towns_RemovedXSmallA"}; // 6 Towns left
+	case 1: {TownTemplate = CTI_Logic getVariable "Towns_RemovedXSmallB"}; //
+	case 2: {TownTemplate = CTI_Logic getVariable "Towns_RemovedSmallA"};	 // 10 Towns left
+	case 3: {TownTemplate = CTI_Logic getVariable "Towns_RemovedSmallB"};	 //
+	case 4: {TownTemplate = CTI_Logic getVariable "Towns_RemovedMedium"};	 // 13 Towns left
+	//--- case 6 = full. useless.
 	/* Adding custom templates
 		Custom templates can be added, just follow these steps:
 			1) In the editor or the mission.sqm, find the gamelogic called "CTI_Logic". Add the following to the init field (modify the towns to the ones you want REMOVED: 

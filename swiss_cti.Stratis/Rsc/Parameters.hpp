@@ -183,9 +183,9 @@ class Params {
 	};
 	class CTI_TOWNS_AMOUNT {
 		title = "TOWNS: Amount";
-		values[] = {0,1,2,3,4};
-		texts[] = {"Extra Small","Small","Medium","Large","Full"};
-		default = 4;
+		values[] = {0,1,2,3,4,5};
+		texts[] = {"6 Towns Variant A","6 Towns Variant B","10 Towns Variant A","10 Towns Variant B","13 Towns","16 Towns (Full)"};
+		default = 5;
 	};
 	class CTI_TOWNS_CAMPS_CREATE {
 		title = "TOWNS: Camps";
