@@ -1,6 +1,9 @@
 /* Titles */
 class RscTitles {
 	
+	// Include for ais-injury
+	#include "ais_injury\dialogs\rscTitlesAIS.hpp"
+	
 	titles[] = {CaptureBar,OptionsAvailable,EndOfGameStats};
 	
 	class CaptureBar {

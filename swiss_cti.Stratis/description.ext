@@ -17,4 +17,5 @@
 class CfgFunctions
 {
 	#include "VAS\cfgfunctions.hpp"
+	#include "ais_injury\cfgFunctionsAIS.hpp"
 };

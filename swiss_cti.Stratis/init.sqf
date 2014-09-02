@@ -95,3 +95,9 @@ if (CTI_IsHeadless) then {
 
 //--- Set the group ID
 execVM "Common\Init\Init_GroupsID.sqf";
+
+// Init the ais-injury system
+if (!isDedicated) then {
+	TCB_AIS_PATH = "ais_injury\";
+	{[_x] call compile preprocessFile (TCB_AIS_PATH+"init_ais.sqf")} forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits});
+};
