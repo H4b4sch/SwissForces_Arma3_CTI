@@ -41,7 +41,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=53;
+		items=52;
 		class Item0
 		{
 			side="LOGIC";
@@ -97,7 +97,6 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="west_curator";
 					description="Alpha, Officer";
 					syncId=2;
 					synchronizations[]={0};
@@ -458,7 +457,6 @@ class Mission
 					description="Bravo, Team Leader";
 					syncId=19;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -480,7 +478,6 @@ class Mission
 					description="Charlie, Team Leader";
 					syncId=20;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -502,7 +499,6 @@ class Mission
 					description="Delta, Sniper";
 					syncId=21;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -524,7 +520,6 @@ class Mission
 					description="Echo, Sniper";
 					syncId=22;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -546,7 +541,6 @@ class Mission
 					description="Foxtrot, Combat Life Saver";
 					syncId=23;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -568,7 +562,6 @@ class Mission
 					description="Golf, Combat Life Saver";
 					syncId=24;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -590,7 +583,6 @@ class Mission
 					description="Hotel, Combat Life Saver";
 					syncId=25;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -612,7 +604,6 @@ class Mission
 					description="India, Explosive Specialist";
 					syncId=26;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -634,7 +625,6 @@ class Mission
 					description="Juliet, Explosive Specialist";
 					syncId=27;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -656,7 +646,6 @@ class Mission
 					description="Kilo, Explosive Specialist";
 					syncId=28;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -678,7 +667,6 @@ class Mission
 					description="Lima, Assault Diver";
 					syncId=29;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -700,7 +688,6 @@ class Mission
 					description="Mike, Assault Diver";
 					syncId=30;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -722,7 +709,6 @@ class Mission
 					description="November, Engineer";
 					syncId=31;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -744,7 +730,6 @@ class Mission
 					description="Oscar, Engineer";
 					syncId=32;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -766,7 +751,6 @@ class Mission
 					description="Papa, Engineer";
 					syncId=33;
 					synchronizations[]={0};
-					init="zeus addCuratorEditableObjects [[this],false];";
 				};
 			};
 		};
@@ -1848,54 +1832,6 @@ class Mission
 					skill=1;
 					text="CTI_Logic";
 					init="this setVariable [""totalTowns"",16];this setVariable [""Towns_RemovedXSmall"",[""Kill Farm"",""Camp Rogain"",""Kamino Firing Range"",""LZ Baldy"",""Old Ruins"",""Transmission Tower Brit"",""Old Outpost"",""Air Station Mike-26"",""Camp Maxwell"",""Camp Tempest"",""Girna"",""Agios loannis"",""Agios Cephas"",""The Spartan""]];this setVariable [""Towns_RemovedSmall"",[""Camp Rogain"",""Kamino Firing Range"",""LZ Baldy"",""Old Ruins"",""Old Outpost"",""Air Station Mike-26"",""Camp Maxwell"",""Camp Tempest"",""Girna"",""Agios loannis"",""Agios Cephas"",""The Spartan""]];this setVariable [""Towns_RemovedMedium"",[""Air Station Mike-26"",""Camp Maxwell"",""Camp Tempest"",""Girna"",""Agios loannis"",""Agios Cephas"",""The Spartan""]];this setVariable [""Towns_RemovedLarge"",[""Kill Farm"",""Stratis Airbase"",""The Spartan""]];nullReturn = [this] ExecVM ""Common\Init\Init_LocationMode.sqf""";
-				};
-			};
-		};
-		class Item52
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={17551.779,82.963737,17263.441};
-					class args
-					{
-						items=4;
-						class Item0
-						{
-							value="west_curator";
-							parentCls="ModuleCurator_F";
-							typeName="Owner";
-						};
-						class Item1
-						{
-							value="zeus";
-							parentCls="ModuleCurator_F";
-							typeName="Name";
-						};
-						class Item2
-						{
-							value="0";
-							parentCls="ModuleCurator_F";
-							typeName="Addons";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleCurator_F";
-							typeName="Forced";
-						};
-					};
-					id=106;
-					side="LOGIC";
-					vehicle="ModuleCurator_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="zeus";
-					description="zeus";
 				};
 			};
 		};
