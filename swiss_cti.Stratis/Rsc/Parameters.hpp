@@ -265,6 +265,12 @@ class Params {
 		texts[] = {"Disabled","Enabled"};
 		default = 0;
 	};
+	class CTI_UNITS_VAS {
+		title = "UNITS: Virtual Ammobox in MHQ";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 1;
+	};
 	class CTI_VEHICLES_EMPTY_TIMEOUT {
 		title = "UNITS: Vehicles Reycling Delay";
 		values[] = {60,120,180,240,300,600,1200,1800,2400,3000,3600};

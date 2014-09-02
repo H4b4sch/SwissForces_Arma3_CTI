@@ -110,8 +110,11 @@ if (_attempts >= 500) then {
 	_sideID = _side call CTI_CO_FNC_GetSideID;
 	
 	_hq = [missionNamespace getVariable Format["CTI_%1_HQ", _side], _startPos, 0, _side, true, false] call CTI_CO_FNC_CreateVehicle;
-	_hq setVariable ["cti_gc_noremove", true]; //--- HQ wreck cannot be removed nor salvaged
-	_hq setVariable ["cti_ai_prohib", true]; //--- HQ may not be used by AI as a commandable vehicle
+	_hq setVariable ["cti_gc_noremove", true];                                   //--- HQ wreck cannot be removed nor salvaged
+	_hq setVariable ["cti_ai_prohib", true]; 	                                   //--- HQ may not be used by AI as a commandable vehicle
+	if(missionNamespace getVariable "CTI_UNITS_VAS" == 1) then {
+		_hq addAction   ["<t color='#ff1111'>Virtual Ammobox</t>", "VAS\open.sqf"];  //--- Virtual Ammobox in HQ avaiable
+	};
 	_hq addEventHandler ["killed", format["[_this select 0, _this select 1, %1] spawn CTI_SE_FNC_OnHQDestroyed", _sideID]];
 	if (CTI_BASE_NOOBPROTECTION == 1) then {
 		_hq addEventHandler ["handleDamage", format["[_this select 2, _this select 3, %1] call CTI_CO_FNC_OnHQHandleDamage", _sideID]]; //--- You want that on public

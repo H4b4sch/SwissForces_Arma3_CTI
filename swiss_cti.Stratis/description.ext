@@ -11,3 +11,10 @@
 #include "Rsc\Debriefing.hpp"
 #include "Rsc\Parameters.hpp"
 #include "Rsc\titles.hpp"
+
+// VAS
+#include "VAS\menu.hpp"
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
