@@ -4,15 +4,15 @@ respawnDelay = 3;
 respawnDialog = false;
 
 //--- Require briefing.html to show up.
-onLoadMission = "BECTI 0.97 - Stratis";
+onLoadMission = "Swiss CTI (BECTI 0.97) - Stratis";
 onLoadMissionTime = false;
-onLoadName = "BECTI 0.97";
+onLoadName = "Swiss CTI (BECTI 0.97)";
 
-briefingName = "BECTI 0.97";
+briefingName = "Swiss CTI (BECTI 0.97)";
 
 //--- ArmA 3 Specifics
-dev = "Benny";
-author = "Benny";
+dev = "H4b4sch";
+author = "H4b4sch (modified BECTI by Benny)";
 // overviewPicture
 
 //--- Properties.
